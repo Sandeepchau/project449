@@ -7,7 +7,7 @@
         padding: 0px;
         font-family: Helvetica, Arial, sans-serif;
     }
-    
+
     input[type=text],
     input[type=password] {
         width: 90%;
@@ -18,7 +18,7 @@
         box-sizing: border-box;
         font-size: 16px;
     }
-    
+
     button {
         background-color: #4CAF50;
         color: white;
@@ -29,19 +29,21 @@
         width: 90%;
         font-size: 20px;
     }
-    
+
     button:hover {
         opacity: 0.8;
     }
+
     /*center the image and position the close button*/
-    
+
     .imgcontainer {
         text-align: center;
         margin: 24px 0 12px 0;
         position: relative;
     }
+
     /*The Model backgroung*/
-    
+
     .modal {
         display: none;
         position: fixed;
@@ -53,8 +55,9 @@
         overflow: auto;
         background-color: rgba(0, 0, 0, 0.4);
     }
+
     /*model content box*/
-    
+
     .modal-content {
         background-color: #fefefe;
         margin: 4% auto 15% auto;
@@ -62,8 +65,9 @@
         width: 40%;
         padding-bottom: 30%;
     }
+
     /*the close button*/
-    
+
     .close {
         position: absolute;
         right: 25px;
@@ -72,21 +76,22 @@
         font-size: 35px;
         font-weight: bold;
     }
-    
+
     .close:hover,
     .close:focus {
         color: red;
         cursor: pointer;
     }
-    
+
     .animate {
         animation: zoom 0.4s
     }
-    
+
     @keyframes zoom {
         from {
             transform: scale(0)
         }
+
         to {
             transform: (1)
         }
@@ -97,12 +102,14 @@
 
 
     <h1 style="text-align:center; font-size:50px; color:#fff;">Model Popup Box</h1>
-    <button onclick="document.getElementById('modal-wrapper').style.display='block'" style="width:200px; margin-top:200px; margin-left:160px;">Open Popup</button>
+    <button onclick="document.getElementById('modal-wrapper').style.display='block'"
+        style="width:200px; margin-top:200px; margin-left:160px;">Open Popup</button>
     <div id="modal-wrapper" class="modal">
         <form class="modal-content animate" action="/action_page.html">
 
             <div class="imgcontainer">
-                <span onclick="document,getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                <span onclick="document,getElementById('modal-wrapper').style.display='none'" class="close"
+                    title="Close PopUp">&times;</span>
                 <h1>Model Popup Box</h1>
             </div>
 
@@ -120,7 +127,7 @@
 
     <script>
         var modal = document.getElementById('modal-wrapper');
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
